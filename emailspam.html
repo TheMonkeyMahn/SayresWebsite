@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Tomfoolery's Email Spammer</title>
+  </head>
+  <body>
+    <div id="navbar" class="screenoverlay">
+      <a class="closebtn" onclick="navBarClose()">&times; Close Menu</a>
+      <hr>
+      <div class="content">
+            <a href="index.html" class="greenglow" style="text-decoration:none">home</a><br><br>
+            <a href="stuff.html" class="greenglow" style="text-decoration:none">stuff</a><br><br>
+            <a href="resources.html" class="greenglow" style="text-decoration:none">resources</a><br><br>
+            <a href="changelog.html" class="greenglow" style="text-decoration:none">changelog</a><br><br>
+            <a href="games.html" class="greenglow" style="text-decoration:none">games</a><br><br>
+      </div>
+    </div>
+    <a class="openbtn" onclick="navBarOpen()">&#9776; Open Menu</a>
+    <h1>E-MAIL SPAMMER</h1>
+    <br />
+    <h3 class="redglow">
+      NEITHER ME OR THE CREATORS OF THE SCRIPT ARE RESPONSIBLE FOR WHAT YOU DO
+      WITH IT.<br />USE AT YOUR OWN RISK.
+    </h3>
+    <br /><br />
+    <p>
+      Script by the fellows at
+      <a href="https://sites.google.com/bentonvillek12.org" target="_blank"
+        >goofy ahh technologies</a
+      >, sourced by
+      <a href="https://starb.in/M5y8XG.js" target="_blank">This Link</a> from
+      <a
+        href="https://sites.google.com/bentonvillek12.org/funkytown/home"
+        target="_blank"
+        >Tomfoolery, LTD.</a
+      >
+    </p>
+    <br /><br /><br />
+    <p>Step-By-Step instructions on how to spam someone's inbox.</p>
+    <br /><br />
+    <p>
+      First, go to
+      <a href="https://script.google.com" target="_blank">script.google.com</a>.
+    </p>
+    <p>Make a new project.</p>
+    <p>Delete the function tag from Code.gs</p>
+    <br />
+    <p>Then, copy this code:</p>
+    <br />
+    <a href="emailspammer.txt" target="_blank">Script</a><br /><br />
+    <p>Paste it into Google Scripts.</p>
+    <p>Replace "ENTER EMAIL HERE" with someone's email.</p>
+    <p>Then run it with this button.</p>
+    <img src="img/runbutton.png" width="500px" />
+    <p>You can customize the subject and the message if you want.</p>
+    <p>I recommend testing it with your own email.</p>
+    <br />
+    <p>Press "run".</p>
+    <br />
+    <h3>The end result? This:</h3>
+    <img src="img/result.png" /><br />
+    <p>Should be working now. Have fun!</p>
+  </body>
+</html>
+<script>
+  let text = document.getElementById("script").innerHTML;
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log("Content copied to clipboard");
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
+</script>

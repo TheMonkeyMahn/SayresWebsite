@@ -1,0 +1,12 @@
+let times = 100;
+let email = 'ENTER EMAIL HERE';
+        
+function myFunction() {
+    console.log('Tomfoolery\'s Emailer');
+    console.log('=====================')
+    for (let i = 0; i &lt; times; i++) {
+    GmailApp.sendEmail(`${email}`, `FREE FORTNITE BATTLE PASS V1.1${i+1}`, 'PRESS NOW TO GET FREE BATTLE PASS IN AMONG US VICTORY ROYALE FOR FREE!!!!!!!!! ALL THAT IS NEEDED IS YOUR USERNAME AND PASSWORD!!!!!!!!!!!1')
+    console.log(`Sent #${i+1} emails`);
+    }
+}
+        

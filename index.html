@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <title>Sayre Is Mid</title>
+  </head>
+  <body>
+    <div id="navbar" class="screenoverlay">
+      <a class="closebtn" onclick="navBarClose()">&times; Close Menu</a>
+      <hr>
+      <div class="content">
+            <a href="index.html" class="greenglow" style="text-decoration:none">home</a><br><br>
+            <a href="stuff.html" class="greenglow" style="text-decoration:none">stuff</a><br><br>
+            <a href="resources.html" class="greenglow" style="text-decoration:none">resources</a><br><br>
+            <a href="changelog.html" class="greenglow" style="text-decoration:none">changelog</a><br><br>
+            <a href="games.html" class="greenglow" style="text-decoration:none">games</a><br><br>
+      </div>
+    </div>
+    <a class="openbtn" onclick="navBarOpen()">&#9776; Open Menu</a>
+    <br />
+    <h1 class="rainbowglow">WELCOME</h1>
+    <br />
+    <h3>
+      Welcome to my website! Here, you can bypass your school Chromebook's
+      restrictions, spam people's emails, and other fun things.
+    </h3>
+    <br /><br />
+    <p class="pinkglow">
+      Go to resources, and then sh1mmer to bypass your school Chromebook's
+      restrictions.
+    </p>
+    <p>I'm just a slightly below average moldy cabbage.</p>
+    <p>I know HTML, CSS, and a few things with JavaScript</p>
+    <button onclick="dontclick()">Don't Click (Please)</button><br />
+    <button onclick="copy()">Copy Something Random</button>
+    <p class="hidden" id="copyabletext">
+      dont know what you've heard dont know what you've heard dont know what
+      you've heard dont know what you've heard OH NO OH NO IM THE BIGGEST BIRD
+      IM THE BIGGEST BIRD IM THE BIGGEST BIRD IM THE BIGGEST BIRD
+    </p>
+    <p>me when amon us</p>
+    <h2 class="rainbow">C O P E</h2>
+    <br />
+    <img src="img/pepe.jpg" width="350px" />
+  </body>
+</html>
+<script>
+  function dontclick() {
+    alert("I told you not to click");
+  }
+</script>
+<script>
+  let text = document.getElementById("copyabletext").innerHTML;
+  const copy = async () => {
+    try {
+      await navigator.clipboard.writeText(text);
+      console.log("Content copied to clipboard");
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
+</script>

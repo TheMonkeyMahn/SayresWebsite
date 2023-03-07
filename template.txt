@@ -1,0 +1,45 @@
+Copy this to start off a page
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title></title>
+</head>
+<body>
+
+</body>
+</html>
+
+Menu:
+
+<div id="navbar" class="screenoverlay">
+    <div style="text-align: center" class="circleimg"><img src="favicon.ico" width="30"></div>
+    <hr>
+
+    <a class="closebtn" onclick="navBarClose()">&times;</a>
+    <div class="content">
+      <h2>sayreOS</p>
+        <h3>what page would you like to visit?</h3>
+          <a href="index.html" class="greenglow">home</a>
+          <a href="stuff.html" class="greenglow">stuff</a>
+          <a href="resources.html" class="greenglow">resources</a>
+          <a href="changelog.html" class="greenglow">changelog</a>
+          <a href="games.html" class="greenglow">games</a>
+        </h2>
+    </div>
+  </div>
+    <a class="openbtn" onclick="navBarOpen()">&#9776; Open Menu</a>
+
+    For the games.html:
+
+    <p>-----------------------------</p>
+    <a href="#" target="_blank"></a>
+    <p></p>
+    <p>-----------------------------</p>
