@@ -133,7 +133,7 @@ a.content:hover {
     background-image: url(img/59h.gif);
     transition: 0.5s;
     background-size: 240px;
-    background-position: top;
+    background-position: bottom 2px;
 }
 
 .closebtn {
