@@ -85,43 +85,63 @@ button > a {
     z-index: 0;
     top: 0;
     left: 0;
-    background-color: #666666;
-    background-color: #000000e6;
+    backdrop-filter: blur(7px);
     overflow-x: hidden;
     padding-top: 10px;
     transition: 0.5s ease-in;
-    text-align: left;
-    font-family: monospace;
-    color: greenyellow;
     text-align: center;
-    font-size: 25px;
 }
 
-/* The sidebar links */
-.sidebar a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #ffffff;
-    display: block;
-    transition: 0.3s;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+a.content {
+    border: black solid;
+    border-radius: 20px;
+    padding: 5px 5px 5px 5px;
+    background-color: #270027;
+    transition: 0.5s;
+    font-size: 50px;
+}
+
+a.content:hover {
+    border-radius: 35px;
+    text-shadow: 0 0 5px #000000, 0 0 10px #363636, 0 0 15px #a3a3a3;
+    font-weight: 150;
+    color: #000000;
+}
+
+#home:hover {
+    background-image: url(img/c57.gif);
+    transition: 0.5s;
+    background-size: 125px;
+    background-position: center;
+}
+
+#games:hover {
+    background-image: url(img/20f.gif);
+    transition: 0.5s;
+    background-size: 150px;
+    background-position: center;
+}
+
+#stuff:hover {
+    background-image: url(img/58f.gif);
+    transition: 0.5s;
+    background-size: 100px;
+    background-position: center;
+}
+
+#changelog:hover {
+    background-image: url(img/59h.gif);
+    transition: 0.5s;
+    background-size: 240px;
+    background-position: center;
 }
 
 .closebtn {
-    text-align: right !important;
-    font-size: 17px;
     transition: 0.3;
 }
 
 .openbtn {
-    text-align: left;
     transition: 0.3;
-}
-
-img.circleimg {
-    border-radius: 999999999999999999999999999999999999999999999999em;
-    border: 2px solid !important;
 }
 
 .content {
@@ -136,6 +156,10 @@ img.circleimg {
 a.content {
     text-decoration: none;
     font-size: 50px;
+}
+
+video {
+    border-radius: 25px;
 }
 
 .rainbow {
