@@ -10,10 +10,10 @@ function sendEmail() {
   let textBoxValue = document.getElementById("myTextbox").value;
 
   // Construct the mailto link with the text box value as the body
-  let mailtoLink = "mailto:recipient@example.com?subject=My%20Textbox%20Value&body=" + encodeURIComponent(textBoxValue);
+  let mailtoLink = "mailto:recipient@example.com?subject=Message%20From%20sayre.fun&body=" + encodeURIComponent(textBoxValue);
 
   // Open the default email client with the mailto link
-  window.location.href = mailtoLink;
+  window.location.href = (mailtoLink, _blank);
 }
 </script>
 
