@@ -1,0 +1,21 @@
+<html>
+<body>
+
+<input type="text" id="myTextbox">
+
+<button onclick="sendEmail()">Send Email</button>
+
+<script>
+function sendEmail() {
+  let textBoxValue = document.getElementById("myTextbox").value;
+
+  // Construct the mailto link with the text box value as the body
+  let mailtoLink = "mailto:recipient@example.com?subject=My%20Textbox%20Value&body=" + encodeURIComponent(textBoxValue);
+
+  // Open the default email client with the mailto link
+  window.location.href = mailtoLink;
+}
+</script>
+
+</body>
+</html>
